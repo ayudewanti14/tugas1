@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form login dan registrasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        
+        <div class="login form">
+            <header>Form Login</header>
+            <form action="tugas1.html" method="GET">
+                <input type="text" placeholder="Masukkan email" name="email" required>
+                <input type="password" placeholder="Masukkan password" name="password" required>
+                <a href="#">Lupa Password?</a>
+                <input type="submit" value="Login" class="button">
+            </form>
+            <div class="signup">
+                <span class="signup">Belum punya akun?
+                <label for="check">Daftar</label>
+            </span>
+            </div>
+        </div>
+
+        <div class="registration form">
+            <header>Form Registrasi</header>
+            <form method="GET" action="#success-message">
+                <input type="text" placeholder="Masukkan email" required>
+                <input type="password" placeholder="Masukkan password" required>
+                <input type="password" placeholder="Masukkan ulang password" required>
+                <input type="submit" class="button" value="Daftar">
+            </form>
+            <p id="success-message">Registrasi Berhasil!</p>
+            <div class="signup">
+                <span class="signup">Sudah punya akun?
+                    <label for="check" onclick="window.location.hash=''">Login</label>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
